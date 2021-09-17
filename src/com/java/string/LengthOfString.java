@@ -8,7 +8,7 @@ public class LengthOfString {
 
 	public static void main(String[] args) {
 		
-		//How to print the length of a Java String without using the inbuild method.
+		//How to print the length of a Java String without using the in-build method.
 
 		String x = "Abubakar";
 		int count = 0;
@@ -22,7 +22,7 @@ public class LengthOfString {
 		System.out.println(count);
 		
 		// printing with the inbuild function;
-		//Needed to add -1 because of the concated null character "\0"
+		//Needed to add -1 because of the concatenated null character "\0"
 		System.out.println(x.length() - 1);
 		
 	}
