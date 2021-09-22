@@ -13,11 +13,12 @@ public class Palindrome {
 		 * forwards, e.g madam, liril, civic
 		 */
 
-		String stringValue = "liril";
+		String stringValue = "refer";
+
+		//converting String object to character Array
 		char[] x = stringValue.toCharArray();
 		int size = x.length;
 		char[] y = new char[size];
-		char[] z = new char[size];
 		int i = 0;
 		while (i != size) {
 			y[size - 1 - i] = x[i];
@@ -46,6 +47,7 @@ public class Palindrome {
 		System.out.println("");
 		System.out.println("**********************Second Logic*********************************");
 		
+		//converting char to String
 		String charToString = String.copyValueOf(y);
 
 		if (stringValue.equals(charToString)) {
