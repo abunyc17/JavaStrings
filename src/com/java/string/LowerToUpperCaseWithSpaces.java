@@ -4,26 +4,26 @@ package com.java.string;
  * @author Abu
  */
 
-public class LowerToUpperCase {
+public class LowerToUpperCaseWithSpaces {
 	
 	public static void main(String[] args) {
 		
-		//This code is meant to convert lowerCase to upperCase without using java default function toUpperCase();
+		//conversion to upperCase with spaces in between phrases.
 		//formula for upperCase conversion: lowerCase - 32 = upperCase
 		
-		String x = "alabarago";
+		String x = "alaba rago market is very big";
 		char[] y = x.toCharArray();
 		int size = y.length;
 		int i = 0;
-		while (i != size) {
-			
-			y[i] = (char)(y[i]- 32);
+		while(i != size) {
+			//check to skip empty spaces in phrase
+			if(y[i] != ' ') {
+				y[i] = (char) (y[i] - 32);
+			}
 			++i;
 		}
-		
 		System.out.println(x);
 		System.out.println(y);
-		
 		
 	}
 
