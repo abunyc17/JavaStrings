@@ -8,6 +8,8 @@ public class IntegerStringEfficient {
 	
 	public static void main(String[] args) {
 		
+		//This is to check if the code block contains only integer String
+		
 		
 		String x = "74582255";
 		int size = x.length();
