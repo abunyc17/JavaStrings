@@ -17,6 +17,11 @@ public class Anagram {
 		String a = "SILENT";
 		String b = "LISTEN";
 		
+		a = a.replace(" ", "");
+		b = b.replace(" ", "");
+		a = a.toLowerCase();
+		b = b.toLowerCase();
+		
 		char[] x = a.toCharArray();
 		char[] y = b.toCharArray();
 		
