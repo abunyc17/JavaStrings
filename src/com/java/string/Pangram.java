@@ -19,6 +19,7 @@ public class Pangram {
 		char[] y = x.toCharArray();
 		int size = y.length;
 		
+		//26 character spaces
 		char[] a = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 		
 		int i = 0;
