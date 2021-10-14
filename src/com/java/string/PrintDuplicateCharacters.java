@@ -1,0 +1,49 @@
+package com.java.string;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Set;
+
+/**
+ * @author Abu
+ */
+
+public class PrintDuplicateCharacters {
+	
+	public static void main(String[] args) {
+		
+		String x = "SILLYSPIDERS";
+		char[] y = x.toCharArray();
+		int size = y.length;
+		
+		int i = 0;
+		Map<Character, Integer> map = new LinkedHashMap<>();
+		
+		while(i != size) {
+			if(map.containsKey(y[i]) == false) {
+				map.put(y[i], 1);
+			}else {
+				int oldValue = map.get(y[i]);
+				int newVal = oldValue + 1;
+				map.put(y[i], newVal);
+			}
+			
+			++i;
+		}
+		
+		Set<Map.Entry<Character, Integer>> lMap = map.entrySet();
+		
+		for( Map.Entry<Character, Integer> data :lMap) {
+			
+			if(data.getValue() > 1) {
+				System.out.print(data.getKey() + " => ");
+				System.out.println(data.getValue());
+			}
+		}
+		
+		
+	}
+
+}
+
+
